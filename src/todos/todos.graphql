@@ -1,0 +1,31 @@
+type Todo {
+  todo: String!
+  id: Float!
+}
+
+type TodosConnection {
+  nodes: [Todo]!
+}
+
+input CreateTodoInput {
+  todo: String!
+}
+
+input UpdateTodoInput {
+  todo: String!
+  id: Float!
+}
+
+input DeleteTodoInput {
+  id: Float!
+}
+
+type Query {
+  todos: TodosConnection!
+}
+
+type Mutation {
+  createTodo(input: CreateTodoInput!): Todo!
+  updateTodo(input: UpdateTodoInput!): Todo!
+  deleteTodo(input: DeleteTodoInput!): String!
+}

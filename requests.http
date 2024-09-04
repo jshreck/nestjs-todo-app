@@ -1,0 +1,21 @@
+### List Todos
+GET http://localhost:3000/todos
+
+### Create Todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "todo": "todo test"
+}
+
+### Update Todo
+PUT http://localhost:3000/todos/22
+Content-Type: application/json
+
+{
+    "todo": "update todo test"
+}
+
+### Delete Todo
+DELETE http://localhost:3000/todos/12
