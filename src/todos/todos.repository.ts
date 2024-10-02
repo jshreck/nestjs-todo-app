@@ -1,6 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { readFile, writeFile } from 'fs/promises';
 
+// this isn't needed anymore!
+
+// getting and saving data
+// some validation
 @Injectable()
 export class TodosRepository {
   async create(todo: string) {
