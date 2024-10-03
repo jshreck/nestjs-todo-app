@@ -24,6 +24,7 @@ type Query {
   todos: TodosConnection!
 }
 
+# // return types on mutations either success or error type, success can include the info
 type Mutation {
   createTodo(input: CreateTodoInput!): Todo!
   updateTodo(input: UpdateTodoInput!): Todo!
